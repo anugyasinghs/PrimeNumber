@@ -1,0 +1,25 @@
+import java.util.*;
+  
+  public class Main{
+  
+  public static void main(String[] args) {
+      // write your code here
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+      int firstNum=0,secondNum=1;
+      
+      int i=1;
+      while(i<=n)
+      {
+        int thirdNum=firstNum+secondNum;
+                System.out.println(firstNum);
+
+        firstNum=secondNum;
+        secondNum=thirdNum;
+
+
+        i++;
+      }
+
+   }
+  }
