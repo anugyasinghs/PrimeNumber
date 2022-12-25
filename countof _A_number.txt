@@ -1,0 +1,25 @@
+import java.util.*;
+    
+    public class Main{
+    
+    public static void main(String[] args) {
+      // write your code here  
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+      int copyofN=n;
+       int temp=1;
+       while(copyofN>9)
+      {
+       copyofN=copyofN/10;
+       temp=temp*10;
+          
+     }
+     while(temp!=0)
+     {
+       int digit=n/temp;
+       System.out.println(digit);
+       n=n%temp;
+       temp=temp/10;
+     }
+    }
+    }
