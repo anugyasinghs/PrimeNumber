@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+  Scanner sc=new Scanner(System.in);
+  int num=sc.nextInt();
+  int pos=1;
+  int sum=0;
+  while(num!=0)
+  {
+   int digit=num%10;
+   int inversenum=pos*(int)Math.pow(10,digit-1);
+   sum+=inversenum;
+   pos++;
+   num=num/10;
+
+
+  }
+  System.out.println(sum);
+ }
+}
